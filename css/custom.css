@@ -1,0 +1,257 @@
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #565a5c;
+}
+
+@font-face {
+    src: url('../fonts/timesbd.ttf');
+    font-family: 'timesbd', sans-serif;
+}
+
+
+/*a[href]:not([class]) {*/
+    /*color: #999;*/
+    /*text-decoration: underline;*/
+/*}*/
+
+
+p{
+    margin: 0;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                    Slider section
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+#slider-section{
+    position: relative;
+}
+
+.top-header{
+    background-color: #021b27;
+    border: none;
+    padding: 10px;
+    width: 40%;
+    margin: 0 0 0 auto;
+}
+
+
+.top-header ul li:not(first-child){
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+
+.top-header > ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.custom-nav{
+    background-color: rgba(255, 255, 255, 0.29);
+    border: none;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.navbar-default .navbar-nav>li>a{
+    font-size: 17px;
+    min-height: 65px;
+    line-height: 65px;
+    color: #fff;
+
+}
+
+
+
+
+/*//////////////Custom Owl Carousel///////*/
+
+
+.owl-carousel {
+    position: relative;
+    height: 100vh;
+}
+.owl-carousel div:not(.owl-controls) {
+    height: 100%;
+}
+.owl-carousel .owl-slide {
+    background-image: url("../img/hero-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.owl-carousel div.owl--text {
+    position: absolute;
+    bottom: 4em;
+    left: 2em;
+    width: 20em;
+    height: 8em;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+.owl-carousel .owl-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+.owl-carousel .owl-controls .owl-buttons div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    width: 50px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    font-size: .9em;
+    border-radius: 3px;
+    color: #FFF;
+    background: #000;
+    opacity: .6;
+    text-transform: capitalize;
+}
+.owl-carousel .owl-controls .owl-buttons .owl-prev {
+    left: 5px;
+}
+.owl-carousel .owl-controls .owl-buttons .owl-next {
+    right: 5px;
+}
+
+
+.title{
+    font-family: 'timesbd', sans-serif;
+}
+
+
+.title::after{
+    display: block;
+    margin: 10px 0;
+    width: 10%;
+    height: 4px;
+    background-color: #3dcd4b;
+    background-color: rgba(61, 205, 75, 0.75);
+    content: '';
+    line-height: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+@media screen and (min-width: 768px){
+    section:not(#our-services-section) {
+        padding: 4.5em 0;
+    }
+}
+
+
+
+.mybtn{
+    background-color: #3dcd4b;
+    border-radius: 20px;
+    color: #fff;
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+    transition: all .3s ease-in-out;
+}
+
+.mybtn:focus{
+    outline: none;
+}
+
+.mybtn:hover{
+    text-decoration: none;
+    color: #fff;
+    opacity: .8;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                    About us section
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#about-us-section .container .row .col-md-6 p{
+    padding: 10px 0;
+    color: #908f8f;
+}
+
+
+#about-us-section .container .row .col-md-6 > .img-effect{
+    width: 100%;
+    max-height: 100%;
+    border: 10px solid #101010;
+    /*border-right: none;*/
+
+}
+
+
+#about-us-section .container .row .col-md-6 .img-effect  img:before{
+   content: '';
+    background-color: #1b6d85;
+    width: 100px;
+    height: 10px;
+
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                    Our Services section
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#our-services-section{
+    background-color: #f2f2f2;
+    padding: 30px 0;
+}
+
+
+#our-services-section .container .row .col-xs-12 > .title{
+    padding-left: 40px;
+}
+
+#our-services-section .container .col-md-4 > ul li{
+    list-style: none;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                    Our News section
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+#news-section .container .row .col-md-6 p{
+    padding: 10px 0;
+    color: #908f8f;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                    Testimonials section
+//////////////////////////////////////////////////////////////////////////////////////////*/
