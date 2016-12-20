@@ -1,10 +1,16 @@
 
+html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
 
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     color: #565a5c;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -13,17 +19,19 @@ body{
 }
 
 
-/*a[href]:not([class]) {*/
-    /*color: #999;*/
-    /*text-decoration: underline;*/
-/*}*/
+a {
+    color: #999;
+    text-decoration: none;
+}
 
 
 p{
     margin: 0;
 }
 
-
+ul{
+    padding: 0;
+}
 
 
 /*///////////////////////////////////////////////////////////////////////////////////////////
@@ -39,7 +47,12 @@ p{
     border: none;
     padding: 10px;
     width: 40%;
+    max-width: 100%;
     margin: 0 0 0 auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
 }
 
 
@@ -51,8 +64,8 @@ p{
 }
 
 
-.top-header > ul li a{
-    text-decoration: none;
+.top-header > p a{
+    margin-right: 10px;
     color: #fff;
 
 }
@@ -64,16 +77,20 @@ p{
     position: absolute;
     z-index: 2;
     right: 0;
+    top: 6.5%;
 }
 
 .navbar-default .navbar-nav>li>a{
     font-size: 17px;
-    min-height: 65px;
-    line-height: 65px;
+    min-height: 55px;
+    line-height: 55px;
     color: #fff;
 
 }
 
+.custom-navbar-brand{
+    padding: 5px!important;
+}
 
 
 
@@ -95,48 +112,50 @@ p{
 }
 .owl-carousel div.owl--text {
     position: absolute;
-    bottom: 4em;
-    left: 2em;
-    width: 20em;
-    height: 8em;
-    padding: 1em;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
-}
-.owl-carousel .owl-controls {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-}
-.owl-carousel .owl-controls .owl-buttons div {
-    position: absolute;
-    top: 0;
     bottom: 0;
-    display: inline-block;
-    zoom: 1;
-    margin: 0;
-    width: 50px;
-    height: 30px;
-    line-height: 25px;
-    text-align: center;
-    font-size: .9em;
-    border-radius: 3px;
-    color: #FFF;
-    background: #000;
-    opacity: .6;
-    text-transform: capitalize;
+    /* left: 2em; */
+    width: 75%;
+    height: 15em;
+    padding: 1em 3em;
+    background: rgba(25, 46, 58, 0.47);
+    border-radius: 4px;
+    color: #fff;
 }
-.owl-carousel .owl-controls .owl-buttons .owl-prev {
-    left: 5px;
-}
-.owl-carousel .owl-controls .owl-buttons .owl-next {
-    right: 5px;
-}
+/*.owl-carousel .owl-controls {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 0;*/
+    /*right: 0;*/
+/*}*/
+/*.owl-carousel .owl-controls .owl-buttons div {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*display: inline-block;*/
+    /*zoom: 1;*/
+    /*margin: 0;*/
+    /*width: 50px;*/
+    /*height: 30px;*/
+    /*line-height: 25px;*/
+    /*text-align: center;*/
+    /*font-size: .9em;*/
+    /*border-radius: 3px;*/
+    /*color: #FFF;*/
+    /*background: #000;*/
+    /*opacity: .6;*/
+    /*text-transform: capitalize;*/
+/*}*/
+/*.owl-carousel .owl-controls .owl-buttons .owl-prev {*/
+    /*left: 5px;*/
+/*}*/
+/*.owl-carousel .owl-controls .owl-buttons .owl-next {*/
+    /*right: 5px;*/
+/*}*/
 
 
 .title{
     font-family: 'timesbd', sans-serif;
+    position: relative;
 }
 
 
@@ -151,6 +170,12 @@ p{
     line-height: 0;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
+    position: absolute;
+}
+
+
+.title-right::after{
+    right: 0;
 }
 
 
@@ -200,21 +225,24 @@ p{
 }
 
 
-#about-us-section .container .row .col-md-6 > .img-effect{
-    width: 100%;
-    max-height: 100%;
+.img-effect{
+    width: 350px;
+    height: 500px;
     border: 10px solid #101010;
-    /*border-right: none;*/
-
+    background-color: #fff;
+    position: relative;
+    float: right;
+    margin-top: 5%;
 }
 
 
-#about-us-section .container .row .col-md-6 .img-effect  img:before{
-   content: '';
-    background-color: #1b6d85;
-    width: 100px;
-    height: 10px;
-
+.img-effect:before{
+    content: url(../img/aboutus.png);
+    display: block;
+    left: -60%;
+    top: -15%;
+    position: absolute;
+    width: 69%;
 }
 
 
@@ -230,12 +258,25 @@ p{
 }
 
 
-#our-services-section .container .row .col-xs-12 > .title{
-    padding-left: 40px;
+
+#our-services-section .container .row:nth-child(2){
+    padding-top: 40px;
 }
 
-#our-services-section .container .col-md-4 > ul li{
-    list-style: none;
+
+#our-services-section .container .col-md-4 .row .col-xs-3 > i{
+    font-size: 4em;
+}
+
+#our-services-section .container .col-md-4 .row .col-xs-9 > h3{
+    margin: 10px 0;
+
+}
+
+#our-services-section .container .col-md-4 .row .col-xs-9 > p{
+    font-size: .9em;
+    margin: 0;
+
 }
 
 
@@ -255,3 +296,189 @@ p{
 /*///////////////////////////////////////////////////////////////////////////////////////////
                                     Testimonials section
 //////////////////////////////////////////////////////////////////////////////////////////*/
+
+#testimonials-section{
+    background-color: #f2f2f2;
+    padding: 2em 0 4.5em!important;
+}
+
+
+/*#testimonials-section .container .row .col-xs-12 p{*/
+    /*padding: 2em 0;*/
+/*}*/
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                    our team section
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+#our-team-section .container .row .col-xs-12 .title{
+    margin-bottom: 3em;
+    margin-left: .5em;
+}
+
+#our-team-section .container .row .col-md-6 > .social-list li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px 10px;
+
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                    Footer section
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+#footer-section{
+    background-color: #021b27;
+    padding: 0!important;
+}
+
+
+#footer-section .container .col-md-5 form{
+    border: 7px solid #fff;
+    padding: 20px;
+
+}
+
+
+/*#footer-section .footer-bg .container .row:nth-child{*/
+    /*padding: 4.5em;*/
+
+/*}*/
+
+#footer-section .container .col-md-5 form h3{
+    color: #3dcd4b;
+    margin: 0 0 15px 0;
+}
+
+
+#footer-section .container .col-md-5 form > .form-group > input,textarea{
+    border: none;
+    border-bottom: 2px solid #3e515a;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+}
+
+
+#footer-section .container .col-md-5 form > .form-group > button{
+    border: none;
+
+}
+
+
+#footer-section .container .col-md-7 p > a{
+    color: #999;
+    margin-right: 20px;
+
+}
+
+
+#footer-section .footer-bg {
+    background: url('../img/footer-bg.png') center no-repeat;
+    width: 100%;
+    background-position: 100% -2px;
+
+}
+
+#footer-section .container .col-md-6 > .footer-addr > li{
+    list-style: none;
+    color: #eee;
+    margin: 10px 0;
+
+}
+
+#footer-section .container .col-md-6 > .footer-addr > li > i{
+    font-size: 1.5em;
+
+}
+
+#footer-section .container  .footer-social-icon{
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+        justify-content: center;
+    -webkit-align-items: center;
+        align-items: center;
+    height: 200px;
+    max-height: 100%;
+}
+
+
+
+
+#footer-section .container .col-md-6  .social-list li {
+    list-style: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.32);
+    float: right;
+    text-align: center;
+
+}
+
+
+#footer-section .container .col-md-6  .social-list li > a{
+    color: #fff;
+    font-size: 1.3em;
+
+}
+
+
+
+.row-spacing{
+    padding: 4.5em 0;
+}
+
+
+.myactive{
+    color: #3dcd4b!important;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////
+                                Bootstrap Carousel
+/////////////////////////////////////////////////////////////////////////*/
+
+
+@media screen and (min-width: 768px){
+    .carousel-indicators {
+        bottom: -60px;
+    }
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    background-color: #3ecd4c;
+    border: 1px solid #000;
+}
+
+
+.owl-theme .owl-controls .owl-buttons div{
+    display: none;
+}
+
+
+
+
