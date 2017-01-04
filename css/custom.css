@@ -480,5 +480,67 @@ ul{
 }
 
 
+/*media query for tablet -geet*/
+
+@media screen and (max-width: 768px){
+    .img-effect {
+        float: none;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        min-width: 200px;
+        min-height: 200px;
+    }
+    .img-effect:before {
+        content: url(../img/aboutus.png);
+        display: block;
+        left: 0;
+        top: -15%;
+        position: initial;
+        width: 100%;
+    }
+
+    #our-team-section .container .row .col-xs-12 .title {
+        margin-bottom: 1em;
+    }
+
+    .owl-carousel div.owl--text {
+        position: absolute;
+        bottom: 0;
+        /* left: 2em; */
+        width: 100%;
+        height: 21em;
+        padding: .9em 1em;
+        background: rgba(25, 46, 58, 0.47);
+        border-radius: 4px;
+        color: #fff;
+    }
+
+    .top-header {
+
+       width: 100%;}
+
+    .custom-nav {
+        top: 10.5%;
+    }
+
+    #footer-section .footer-bg {
+       background-image:none ;
+    }
+}
 
 
+@media screen and (max-width: 400px){
+    .navbar-default .navbar-nav>li>a {
+        font-size: 17px;
+        min-height: 50px;
+        line-height: 50px;
+        color: #3DCD4B;
+    }
+    .carousel-indicators {
+        position: absolute;
+        bottom: -46px;
+    }
+
+    .custom-nav {
+        background-color: rgba(255, 255, 255, 0.88);}
+}
