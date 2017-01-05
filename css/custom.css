@@ -71,7 +71,7 @@ ul{
 }
 
 .custom-nav{
-    background-color: rgba(255, 255, 255, 0.29);
+    background-color: rgba(255, 116, 0, 0.15);
     border: none;
     margin-bottom: 0;
     position: absolute;
@@ -165,7 +165,7 @@ ul{
     width: 10%;
     height: 4px;
     background-color: #3dcd4b;
-    background-color: rgba(61, 205, 75, 0.75);
+    background-color: #FF7300;
     content: '';
     line-height: 0;
     -webkit-transition: all 1s ease;
@@ -188,7 +188,7 @@ ul{
 
 
 .mybtn{
-    background-color: #3dcd4b;
+    background-color: #01AEF0;
     border-radius: 20px;
     color: #fff;
     display: block;
@@ -198,7 +198,7 @@ ul{
     text-decoration: none;
     text-align: center;
     font-size: 14px;
-    margin: 10px 0;
+    margin: 10px auto;
     transition: all .3s ease-in-out;
 }
 
@@ -228,7 +228,7 @@ ul{
 .img-effect{
     width: 350px;
     height: 500px;
-    border: 10px solid #101010;
+    border: 10px solid #FF7300;
     background-color: #fff;
     position: relative;
     float: right;
@@ -282,6 +282,30 @@ ul{
 
 
 /*///////////////////////////////////////////////////////////////////////////////////////////
+                                    Our Product section
+//////////////////////////////////////////////////////////////////////////////////////////*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    color: #0E136F;
+   background-color: transparent;
+    border-bottom: 1px solid #0E136F;
+    border-radius: 0;
+}
+.v-divider{
+    border-right: 1px solid #999;
+    height: 200px;
+    max-height: 100%;
+}
+.m-t-40{
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
                                     Our News section
 //////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -307,6 +331,9 @@ ul{
     /*padding: 2em 0;*/
 /*}*/
 
+.partner-text{
+
+}
 
 /*///////////////////////////////////////////////////////////////////////////////////////////
                                     our team section
@@ -523,6 +550,14 @@ ul{
         top: 10.5%;
     }
 
+    .text-center-xs{
+        text-align: center;
+    }
+
+    .content-center-xs{
+        margin:0 auto;
+    }
+
     #footer-section .footer-bg {
        background-image:none ;
     }
@@ -542,5 +577,10 @@ ul{
     }
 
     .custom-nav {
-        background-color: rgba(255, 255, 255, 0.88);}
+        background-color: rgba(255, 255, 255, 0.88);
+    }
+
+    .text-center-xs{
+        text-align: center;
+    }
 }
