@@ -84,8 +84,12 @@ ul{
     font-size: 17px;
     min-height: 55px;
     line-height: 55px;
-    color: #fff;
+    color: #00188f;
 
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #fff;
 }
 
 .custom-navbar-brand{
@@ -189,6 +193,7 @@ ul{
 
 .mybtn{
     background-color: #01AEF0;
+   
     border-radius: 20px;
     color: #fff;
     display: block;
@@ -200,6 +205,10 @@ ul{
     font-size: 14px;
     margin: 10px auto;
     transition: all .3s ease-in-out;
+}
+
+.mybtn-green{
+    background-color: #3dcd4b;
 }
 
 .mybtn:focus{
@@ -231,7 +240,7 @@ ul{
     border: 10px solid #FF7300;
     background-color: #fff;
     position: relative;
-    float: right;
+    float: left;
     margin-top: 5%;
 }
 
@@ -239,7 +248,8 @@ ul{
 .img-effect:before{
     content: url(../img/aboutus.png);
     display: block;
-    left: -60%;
+/*    left: -60%;*/
+    left: 20%;
     top: -15%;
     position: absolute;
     width: 69%;
@@ -324,6 +334,10 @@ ul{
     background-color: #f6f6f6;
 }
 
+.b-r-3{
+    border-right: 3px solid #ddd;
+}
+
 
 
 /*///////////////////////////////////////////////////////////////////////////////////////////
@@ -335,6 +349,15 @@ ul{
     padding: 2em 0 4.5em!important;
 }
 
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                    Testimonials section
+//////////////////////////////////////////////////////////////////////////////////////////*/
+
+#social-section{
+    background-color: #fff;
+    padding: 2em 0 4.5em!important;
+}
 
 /*#testimonials-section .container .row .col-xs-12 p{*/
     /*padding: 2em 0;*/
@@ -373,7 +396,8 @@ ul{
 
 
 #footer-section .container .col-md-5 form{
-    border: 7px solid #fff;
+/*    border: 7px solid #fff;*/
+    border: 7px solid #ff7300;
     padding: 20px;
 
 }
@@ -578,7 +602,8 @@ ul{
         font-size: 17px;
         min-height: 50px;
         line-height: 50px;
-        color: #3DCD4B;
+/*        color: #3DCD4B;*/
+        color: #00188f;
     }
     .carousel-indicators {
         position: absolute;
@@ -597,4 +622,18 @@ ul{
 
 .f-15{
     font-size: 15px;
+}
+
+.color-db{
+    color: #00188f !important;
+}
+
+
+.m-b-50{
+    margin-bottom: 50px !important;
+}
+
+
+.m-b-20{
+    margin-bottom: 1em;
 }
