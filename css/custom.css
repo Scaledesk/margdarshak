@@ -203,7 +203,7 @@ ul{
     text-decoration: none;
     text-align: center;
     font-size: 14px;
-    margin: 10px auto;
+    margin: 10px 0;
     transition: all .3s ease-in-out;
 }
 
@@ -302,7 +302,7 @@ ul{
     border-radius: 0;
 }
 .v-divider{
-    border-right: 1px solid #999;
+    border-right: 1px solid #ddd;
     height: 200px;
     max-height: 100%;
 }
@@ -563,6 +563,10 @@ ul{
         margin-bottom: 1em;
     }
 
+    .xs-center{
+        margin:0 auto;
+    }
+
     .owl-carousel div.owl--text {
         position: absolute;
         bottom: 0;
@@ -581,14 +585,6 @@ ul{
 
     .custom-nav {
         top: 10.5%;
-    }
-
-    .text-center-xs{
-        text-align: center;
-    }
-
-    .content-center-xs{
-        margin:0 auto;
     }
 
     #footer-section .footer-bg {
