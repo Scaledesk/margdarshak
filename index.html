@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!--Owl Carousel-->
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -27,11 +27,11 @@
     <div>
 
         <div class="top-header">
-            <p>
+            <p class="text-center-xs">
                 <a href="">&nbsp;&nbsp;<i class="fa fa-phone"></i>+91 99122462145</a>
-                <a href="">Google&nbsp;<i class="fa fa-google"></i></a>
-                <a href="">Twitter&nbsp;&nbsp;<i class="fa fa-twitter"></i></a>
-                <a href="">Linkedin&nbsp;&nbsp;<i class="fa fa-linkedin"></i></a>
+                <a href="" class="hidden-xs">Google&nbsp;<i class="fa fa-google"></i></a>
+                <a href="" class="hidden-xs">Twitter&nbsp;&nbsp;<i class="fa fa-twitter"></i></a>
+                <a href="" class="hidden-xs">Linkedin&nbsp;&nbsp;<i class="fa fa-linkedin"></i></a>
 
             </p>
         </div>
@@ -71,9 +71,9 @@
         <div id="owl-example" class="owl-carousel">
             <div class="owl-slide">
                 <div class="owl--text">
-                    <h1>Experience <span class="myactive">Great</span> Services</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores corporis culpa cupiditate debitis dignissimos distinctio, doloremque eaque est incidunt, necessitatibus nemo nobis porro quod repellendus sed sequi sint totam.</p>
-
+                    <h1>Experience the <span class="myactive">New Age</span> Business Solutions</h1>
+                    <p>With Clear Intention, With Bold Courage, With Absolute Conviction
+                        The MargDarshank Inc is here to disrupt the business solutions ecosystem for Corporates, Startups & SMEs.</p>
                     <a href="" class="mybtn" style="margin: 10px 0;">Read more</a>
 
                 </div>
@@ -97,9 +97,12 @@
 <section id="about-us-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 text-right">
-                <div class="img-effect"></div>
+            <div class="col-md-6 col-sm-12 col-xs-12 text-right ">
+                <div class="img-effect hidden-xs"></div>
+                <div class="visible-xs">
+                    <img src="img/aboutus.png" class="img-custom-xs">
 
+                </div>
             </div>
 
             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -119,7 +122,7 @@
                     The MargDarshak Inc is committed to make this Giant Economic Leap happen in a disruptive way to change the World forever.
                 </p>
 
-                <a href="" class="mybtn" style="margin: 10px 0;">Read More</a>
+                <a href="#" class="mybtn" style="margin: 10px 0;">Read More</a>
 
 
 
@@ -205,16 +208,18 @@
 
 
             <ul class="nav nav-pills">
-                <li class="active"><a data-toggle="pill" href="#Startups">Startups</a></li>
-                <li><a data-toggle="pill" href="#Students" class="pill-custom-style">Students</a></li>
-                <li><a data-toggle="pill" href="#sme" class="pill-custom-style">sme</a></li>
+
+
+                <li class="active"><a data-toggle="pill" href="#Students" class="pill-custom-style">Students</a></li>
+                <li><a data-toggle="pill" href="#Startups">Startups</a></li>
+                <li><a data-toggle="pill" href="#sme" class="pill-custom-style">SME</a></li>
                 <li><a data-toggle="pill" href="#Corporate" class="pill-custom-style">Corporate</a></li>
             </ul>
         </div>
 
 
         <div class="tab-content m-t-40 content-center-xs">
-            <div id="Startups" class="tab-pane fade in active">
+            <div id="Students" class="tab-pane fade in active">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="row">
@@ -223,7 +228,50 @@
 
                             </div>
                             <div class="col-md-4">
-                                <h3>Startups</h3>
+                                <h3>Digital Marketing</h3>
+                                <p>Learn practical framework to win in digital world.</p>
+                                <a href="" class="mybtn xs-center">Read More</a>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="v-divider hidden-xs hidden-sm">
+                                    <!-- blank-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-2">
+
+                                <!-- blank-->
+
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="img/product2.jpg" alt="">
+
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Career Guru</h3>
+                                <p>Have a Career walkthrough with us to design your future. </p>
+                                <a href="" class="mybtn xs-center">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Startups" class="tab-pane fade ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/product1.jpg" alt="">
+
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Bootstrap Advisory</h3>
                                 <p>Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <a href="" class="mybtn xs-center">Read More</a>
                             </div>
@@ -249,7 +297,7 @@
 
                             </div>
                             <div class="col-md-4">
-                                <h3>Startups</h3>
+                                <h3>Bussiness Coach</h3>
                                 <p>Digital Marketing
                                     Market Research
                                     Business Strategy
@@ -262,52 +310,7 @@
             </div>
 
 
-            <div id="Students" class="tab-pane fade">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="img/product1.jpg" alt="">
 
-                            </div>
-                            <div class="col-md-4">
-                                <h3>Students</h3>
-                                <p>Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="" class="mybtn xs-center">Read More</a>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="v-divider hidden-xs hidden-sm">
-                                    <!-- blank-->
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-2">
-
-                                    <!-- blank-->
-
-
-                            </div>
-
-                            <div class="col-md-6">
-                                <img src="img/product1.jpg" alt="">
-
-                            </div>
-                            <div class="col-md-4">
-                                <h3>Students</h3>
-                                <p>Digital Marketing
-                                    Market Research
-                                    Business Strategy
-                                    Career Guru. </p>
-                                <a href="" class="mybtn xs-center">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div id="sme" class="tab-pane fade">
                 <div class="row">
@@ -318,7 +321,7 @@
 
                             </div>
                             <div class="col-md-4">
-                                <h3>sme</h3>
+                                <h3>Growth Orbit Shifter</h3>
                                 <p>Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <a href="" class="mybtn xs-center">Read More</a>
                             </div>
@@ -344,7 +347,7 @@
 
                             </div>
                             <div class="col-md-4">
-                                <h3>sme</h3>
+                                <h3>New Market Gameplan</h3>
                                 <p>Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <a href="" class="mybtn xs-center">Read More</a>
                             </div>
@@ -361,7 +364,7 @@
 
                             </div>
                             <div class="col-md-4">
-                                <h3>Corporate</h3>
+                                <h3>Innovation</h3>
                                 <p>Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <a href="" class="mybtn xs-center">Read More</a>
                             </div>
@@ -387,7 +390,7 @@
 
                             </div>
                             <div class="col-md-4">
-                                <h3>Corporate</h3>
+                                <h3>Life Coach</h3>
                                 <p>Lorem ipsum dolor sit amet, tempor incididunt ut labore et dolore magna aliqua.</p>
                                 <a href="" class="mybtn xs-center">Read More</a>
                             </div>
@@ -717,8 +720,11 @@
 
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="img-effect"></div>
+                <div class="img-effect hidden-xs"></div>
+                <div class="visible-xs">
+                    <img src="img/aboutus.png">
 
+                </div>
             </div>
 
             <div class="col-md-6 col-sm-12 col-xs-12">

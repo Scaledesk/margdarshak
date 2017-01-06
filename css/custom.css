@@ -84,7 +84,7 @@ ul{
     font-size: 17px;
     min-height: 55px;
     line-height: 55px;
-    color: #00188f;
+    color: #00AEEF;
 
 }
 
@@ -614,6 +614,10 @@ ul{
 
     .text-center-xs{
         text-align: center;
+    }
+    .img-custom-xs{
+        width:100%;
+        margin-top: 5%;
     }
 }
 
