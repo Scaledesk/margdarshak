@@ -586,7 +586,9 @@ ul{
     .custom-nav {
         top: 10.5%;
     }
-
+.content-center-xs{
+    text-align: center;
+}
     #footer-section .footer-bg {
        background-image:none ;
     }
