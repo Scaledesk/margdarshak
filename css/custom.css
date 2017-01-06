@@ -444,14 +444,14 @@ ul{
 
 }
 
-#footer-section .container .col-md-6 > .footer-addr > li{
+#footer-section .container .footer-addr > li{
     list-style: none;
     color: #eee;
     margin: 10px 0;
 
 }
 
-#footer-section .container .col-md-6 > .footer-addr > li > i{
+#footer-section .container .footer-addr > li > i{
     font-size: 1.5em;
 
 }
@@ -469,7 +469,7 @@ ul{
 
 
 
-#footer-section .container .col-md-6  .social-list li {
+#footer-section .container .social-list li {
     list-style: none;
     display: block;
     width: 50px;
@@ -484,7 +484,7 @@ ul{
 }
 
 
-#footer-section .container .col-md-6  .social-list li > a{
+#footer-section .container .social-list li > a{
     color: #fff;
     font-size: 1.3em;
 
