@@ -26,11 +26,18 @@ a {
 
 
 p{
+
     margin: 0;
 }
 
 ul{
     padding: 0;
+}
+
+
+.font-style-p{
+    font-family: 'Hind', sans-serif!important;
+
 }
 
 
