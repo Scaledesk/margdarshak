@@ -192,7 +192,7 @@ ul{
 
 @media screen and (min-width: 768px){
     section:not(#our-services-section) {
-        padding: 4.5em 0;
+        padding: 4.5em 0 10em 0;
     }
 }
 
@@ -200,7 +200,7 @@ ul{
 
 .mybtn{
     background-color: #01AEF0;
-   
+
     border-radius: 20px;
     color: #fff;
     display: block;
@@ -378,18 +378,76 @@ ul{
                                     our team section
 //////////////////////////////////////////////////////////////////////////////////////////*/
 
-#our-team-section .container .row .col-xs-12 .title{
+#our-team-section .container .row :first-child.col-xs-12 .title{
     margin-bottom: 3em;
     margin-left: .5em;
 }
 
-#our-team-section .container .row .col-md-6 > .social-list li{
+#our-team-section  > .title > small{
+    margin: 1em 0;
+}
+
+#our-team-section .social-list li{
     list-style: none;
     display: inline-block;
-    margin: 15px 10px;
+    margin: 10px 0;
 
 }
 
+#our-team-section .img-container{
+    width: 400px;
+    margin: 20px 30px 10px auto;
+}
+
+
+#our-team-section .img-container .row:first-child{
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+#our-team-section .img-container .row > .col-md-6{
+    padding: 0;
+}
+
+
+#our-team-section .img-container{
+    position: relative;
+}
+
+
+#our-team-section .img-container::before{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 460px;
+    border: 10px solid #FF7300;
+    background-color: #fff;
+    top: 10%;
+    left: -25%;
+    z-index: -1;
+    margin-bottom: 20%;
+}
+
+
+#our-team-section .img-container .row > .col-md-6 > a{
+    display: block;
+    overflow: hidden;
+
+}
+
+#our-team-section .img-container .image-overlay{
+    background-color: #3dcd4b;
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+}
+
+
+#our-team-section .img-container .row > .col-md-6  a:hover .image-overlay{
+    background-color: #3c763d;
+    color: #fff;
+    opacity: 1;
+}
 
 
 /*///////////////////////////////////////////////////////////////////////////////////////////
