@@ -167,6 +167,7 @@ ul{
 .title{
     font-family: 'timesbd', sans-serif;
     position: relative;
+    font-size: 36px;
 }
 
 
@@ -342,7 +343,25 @@ ul{
 }
 
 .b-r-3{
-    border-right: 3px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.card-logo-1{
+    width: 95%;
+    height: 80px;
+    text-align: center;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important; */
+    background-color: rgba(234, 228, 228, 0.52);
+    border: 1px solid #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 3px 5px;
+    overflow: hidden;
+}
+
+.card-logo-1 > img{
+    max-width:100px;
 }
 
 
@@ -371,7 +390,7 @@ ul{
 /*}*/
 
 .partner-text{
-
+    padding-top: 25px;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////
@@ -518,6 +537,17 @@ ul{
     .carousel-indicators {
         bottom: -60px;
     }
+    .p-0{
+        padding:0;
+    }
+
+    .p-l-0{
+        padding-left:0;
+    }
+
+    .p-r-0{
+        padding-right:0;
+    }
 }
 
 .carousel-indicators li {
@@ -567,6 +597,10 @@ ul{
         top: -15%;
         position: initial;
         width: 100%;
+    }
+
+    .p-70{
+        padding:70px!important;
     }
 
     #our-team-section .container .row .col-xs-12 .title {
